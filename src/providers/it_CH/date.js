@@ -1,2 +1,2 @@
-var moment = require('moment');
-moment.locale('it');
+import {locale} from 'moment'
+locale('it')

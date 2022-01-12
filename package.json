@@ -1,17 +1,18 @@
 {
-  "name": "casual",
-  "version": "1.6.2",
+  "name": "fakeify",
+  "version": "0.0.1",
   "description": "Fake data generator",
-  "main": "src/casual.js",
+  "main": "src/fakeify.js",
   "scripts": {
     "test": "make test"
   },
-  "repository": "https://github.com/boo1ean/casual.git",
+  "repository": "https://github.com/tkdailey11/fakeify.git",
   "keywords": [
     "faker",
     "fake",
     "data",
     "casual",
+    "fakeify",
     "fixtures",
     "testing",
     "seed",
@@ -20,14 +21,18 @@
     "mocking",
     "generator"
   ],
-  "author": "Egor Gumenyuk <boo1ean0807@gmail.com>",
+  "author": "Tyler Dailey <tkdailey11@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "mersenne-twister": "^1.0.1",
     "moment": "^2.15.2"
   },
   "devDependencies": {
+    "@typescript-eslint/parser": "^5.9.1",
+    "eslint": "^8.6.0",
     "mocha": "^5.2.0",
+    "prettier": "^2.5.1",
+    "prettier-eslint": "^13.0.0",
     "realist": "~0.2.5",
     "should": "~3.1.2",
     "text-table": "~0.2.0"

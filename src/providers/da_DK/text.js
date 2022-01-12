@@ -1,5 +1,5 @@
 var provider = {
-	letters: 'qwertyuiopåasdfghjklæøzxcvbnmQWERTYUIOPÅASDFGHJKLÆØZXCVBNM',
-};
+  letters: 'qwertyuiopåasdfghjklæøzxcvbnmQWERTYUIOPÅASDFGHJKLÆØZXCVBNM'
+}
 
-module.exports = provider;
+export default provider

@@ -1,5 +1,6 @@
 var provider = {
-	letters: 'abcčdďeěéfghiíjklmnňoópqrřsštťúůvwxyýzžABCČDĎEĚÉFGHIÍJKLMNŇOÓPQRŘSŠTŤUÚŮVWXYÝZŽ',
-};
+  letters:
+    'abcčdďeěéfghiíjklmnňoópqrřsštťúůvwxyýzžABCČDĎEĚÉFGHIÍJKLMNŇOÓPQRŘSŠTŤUÚŮVWXYÝZŽ'
+}
 
-module.exports = provider;
+export default provider

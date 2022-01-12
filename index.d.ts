@@ -1,4 +1,4 @@
-declare namespace Casual {
+declare namespace Fakeify {
   interface Generators {
     // EMBEDDED GENERATORS
     _country(): string;         // 'United Kingdom'
@@ -177,7 +177,7 @@ declare namespace Casual {
     rgb_array(): Array<number>        // [ 194, 193, 166 ]
   }
 
-  interface Casual {
+  interface Fakeify {
     // EMBEDDED GENERATORS
     country: string;         // 'United Kingdom'
     city: string;            // 'New Ortiz chester'
@@ -298,7 +298,7 @@ declare namespace Casual {
     functions(): functions;
   }
 }
-declare module "casual" {
-  const casual: Casual.Generators & Casual.Casual;
-  export = casual;
+declare module "fakeify" {
+  const fakeify: Fakeify.Generators & Fakeify.Fakeify;
+  export = fakeify;
 }

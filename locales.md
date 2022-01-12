@@ -1,14 +1,14 @@
 ## Adding locale
 
-Create locale folder in [src/providers](https://github.com/boo1ean/casual/blob/master/src/providers)
+Create locale folder in [src/providers](https://github.com/tkdailey11/fakeify/blob/master/src/providers)
 
-Add locale to locales list [src/casual.js](https://github.com/boo1ean/casual/blob/master/src/casual.js#L53-L56)
+Add locale to locales list [src/fakeify.js](https://github.com/tkdailey11/fakeify/blob/master/src/fakeify.js#L53-L56)
 
 Create specific providers inside of locale folder, it should have same name as base provider.
 
 Locale-specific provider will be extended from base provider and will have all its properties.
 
-Keep in mind that all provider methods will be bound to the casual object, so you can use other generators for your generator:
+Keep in mind that all provider methods will be bound to the fakeify object, so you can use other generators for your generator:
 
 ```javascript
 provider = {
@@ -28,12 +28,12 @@ There are three things you can override/add:
 
 It should be pretty straightforward after looking at examples:
 
-- [Add locale specific generators](https://github.com/boo1ean/casual/blob/master/src/providers/en_US/address.js)
-- [Just override dictionaries](https://github.com/boo1ean/casual/blob/master/src/providers/ru_RU/text.js#L2)
-- [Tweak most of the stuff!](https://github.com/boo1ean/casual/blob/master/src/providers/ru_RU/address.js)
+- [Add locale specific generators](https://github.com/tkdailey11/fakeify/blob/master/src/providers/en_US/address.js)
+- [Just override dictionaries](https://github.com/tkdailey11/fakeify/blob/master/src/providers/ru_RU/text.js#L2)
+- [Tweak most of the stuff!](https://github.com/tkdailey11/fakeify/blob/master/src/providers/ru_RU/address.js)
 
 To view generator results you can use help util:
 
 > node utils/show.js internet -l ru_RU
 
-For details see [usage](https://github.com/boo1ean/casual/blob/master/utils/usage.txt)
+For details see [usage](https://github.com/tkdailey11/fakeify/blob/master/utils/usage.txt)

@@ -1,10 +1,10 @@
-var moment = require('moment');
+import {locale, unix} from 'moment'
 
 var provider = {
-  moment: function() {
-    moment.locale('bg')
-    return moment.unix(this.unix_time);
-  },
-};
+  moment: function () {
+    locale('bg')
+    return unix(this.unix_time)
+  }
+}
 
-module.exports = provider;
+export default provider

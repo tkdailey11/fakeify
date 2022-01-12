@@ -1,12 +1,11 @@
-var moment = require('moment');
-moment.locale('de');
+import {locale} from 'moment'
+locale('de')
 
 var provider = {
+  date: function (format) {
+    format = format || 'DD.MM.YYYY'
+    return this.moment.format(format)
+  }
+}
 
-	date: function(format) {
-		format = format || 'DD.MM.YYYY';
-		return this.moment.format(format);
-	}
-};
-
-module.exports = provider;
+export default provider
