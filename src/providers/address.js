@@ -582,4 +582,4 @@ var provider = {
   }
 }
 
-module.exports = provider
+export default provider
