@@ -1,4 +1,5 @@
-import {unix} from 'moment'
+//import {unix} from 'moment'
+import dayjs from '../dayjs'
 
 var provider = {
   centuries: [
@@ -447,7 +448,7 @@ var provider = {
   ],
 
   unix_time: function () {
-    return this.integer(0, 1462369607)
+    return this.integer(0, dayjs().unix())
   },
 
   moment: function () {
@@ -456,12 +457,12 @@ var provider = {
 
   date: function (format) {
     format = format || 'YYYY-MM-DD'
-    return this.moment.format(format)
+    return dayjs.format(format)
   },
 
   time: function (format) {
     format = format || 'HH:mm:ss'
-    return this.moment.format(format)
+    return dayjs.format(format)
   },
 
   century: function () {
@@ -473,27 +474,28 @@ var provider = {
   },
 
   day_of_year: function () {
-    return this.moment.dayOfYear()
+    return dayjs.dayOfYear()
   },
 
   day_of_month: function () {
-    return this.moment.format('D')
+    return dayjs.format('D')
   },
 
   day_of_week: function () {
-    return this.moment.format('d')
+    dayjs.format('d')
+    return dayjs.format('d')
   },
 
   month_number: function () {
-    return this.moment.format('M')
+    return dayjs.format('M')
   },
 
   month_name: function () {
-    return this.moment.format('MMMM')
+    return dayjs.format('MMMM')
   },
 
   year: function () {
-    return this.moment.format('YYYY')
+    return dayjs.format('YYYY')
   },
 
   timezone: function () {

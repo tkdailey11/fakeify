@@ -24,6 +24,7 @@
   "author": "Tyler Dailey <tkdailey11@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "dayjs": "^1.10.7",
     "mersenne-twister": "^1.0.1",
     "moment": "^2.15.2"
   },

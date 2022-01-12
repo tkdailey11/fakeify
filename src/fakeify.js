@@ -23,17 +23,15 @@ var build_fakeify = function () {
     return adapter
   }
 
-  var providers = [
-    'address',
-    'text',
-    'internet',
-    'person',
-    'number',
-    'date',
-    'payment',
-    'misc',
-    'color'
-  ]
+  const providers = ['']
+  fs.readdir('./providers', (_, files) => {
+    files.forEach((file) => {
+      if (file !== 'locales') {
+        providers.push(String(file).replace('.js', ''))
+      }
+    })
+  })
+  providers.shift()
 
   fakeify.register_locale = function (locale) {
     fakeify.define(locale, function () {
@@ -43,7 +41,9 @@ var build_fakeify = function () {
         fakeify.register_provider(
           extend(
             require('./providers/' + provider),
-            safe_require(__dirname + '/providers/' + locale + '/' + provider)
+            safe_require(
+              __dirname + '/providers/locales/' + locale + '/' + provider
+            )
           )
         )
       })
